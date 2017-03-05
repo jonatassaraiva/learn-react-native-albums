@@ -1,0 +1,7 @@
+{
+  "vsicons.presets.angular": false,
+  "files.associations": {
+    "**/src/actions/*.js": "javascript",
+    "**/src/**/*.js": "javascriptreact"
+  }
+}
