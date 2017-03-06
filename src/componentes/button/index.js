@@ -1,15 +1,12 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet, Platform } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
+import Render from './render';
 
 const Button = (props) => {
-
-  return (
-    <TouchableOpacity style={styles.button} onPress={props.onPress}>
-      <Text style={styles.text}>
-        {props.text}
-      </Text>
-    </TouchableOpacity>
-  );
+  return (<Render text={props.text}
+    onPress={props.onPress}
+    buttomStyle={styles.button}
+    textStyle={styles.text} />);
 };
 
 Button.propTypes = {

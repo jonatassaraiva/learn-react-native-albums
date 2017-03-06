@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "openDebug": "open 'rndebugger://set-debugger-loc?host=localhost&port=8081'",
+    "postinstall": "rndebugger-open"
   },
   "dependencies": {
     "axios": "^0.15.3",
@@ -19,6 +21,7 @@
     "eslint-plugin-react": "^6.10.0",
     "eslint-plugin-react-native": "^2.2.1",
     "jest": "19.0.2",
+    "react-native-debugger-open": "^0.3.2",
     "react-test-renderer": "15.4.2"
   },
   "jest": {
